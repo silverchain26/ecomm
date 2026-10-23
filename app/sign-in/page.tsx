@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import {authClient}  from "@/lib/auth-client";
+import {signIn}  from "@/lib/auth-client";
 
 export default function SignInPage() {
   const router = useRouter();
@@ -22,7 +22,7 @@ export default function SignInPage() {
     if (res.error) {
       setError(res.error.message || "Something went wrong.");
     } else {
-      router.push("/dashboard");
+      router.push("/");
     }
   }
 

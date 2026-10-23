@@ -32,7 +32,7 @@ export default function RootLayout({ children }: Readonly<{children: React.React
     >
       <body className="min-h-full flex flex-col">
 
-      <Navbar/>
+      
         
         
         {children}
